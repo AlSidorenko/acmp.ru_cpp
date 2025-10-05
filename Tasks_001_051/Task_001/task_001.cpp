@@ -20,14 +20,14 @@ using namespace std;
 
 int main() {
     // Указываем полные пути к файлам
-    string input_path =  "D:/JetBrains/CLionProject/Cpp/Tests_Interview_cpp/acmp.ru_cpp/INPUT.TXT";
-    string output_path = "D:/JetBrains/CLionProject/Cpp/Tests_Interview_cpp/acmp.ru_cpp/OUTPUT.TXT";
+    string input_path =  "D:/JetBrains/CLionProject/Cpp/Tests_Interview_cpp/acmp.ru_cpp/Tasks_001_051/Task_001/INPUT.TXT";
+    string output_path = "D:/JetBrains/CLionProject/Cpp/Tests_Interview_cpp/acmp.ru_cpp/Tasks_001_051/Task_001/OUTPUT.TXT";
 
     ifstream input(input_path);
     ofstream output(output_path);
 
     if (!input.is_open()) {
-        cout << "Ошибка: не удалось открыть " << input_path << endl;
+        cout << "Error: Failed to open " << input_path << endl;
         return 1;
     }
 
@@ -35,7 +35,7 @@ int main() {
     input >> a >> b;
     output << a + b;
 
-    cout << "Сумма " << a << " + " << b << " = " << a + b << endl;
+    cout << "Result: " << a << " + " << b << " = " << a + b << endl;
 
     return 0;
 }

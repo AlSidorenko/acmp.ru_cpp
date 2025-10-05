@@ -1,2 +1,2 @@
-# acmp.ru_c-
+# acmp.ru_cpp
 C++ Tutorial Project
